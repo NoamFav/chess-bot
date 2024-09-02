@@ -7,7 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36120f68-dd19-44f3-91b2-b486371b4f2a" name="Changes" comment="starter and pieces" />
+    <list default="true" id="36120f68-dd19-44f3-91b2-b486371b4f2a" name="Changes" comment="starter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +40,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -57,7 +58,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1725273205" />
+                    <option name="lastUsedInstant" value="1725273720" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -89,28 +90,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Bishop.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Knight.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Pawn.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Rook.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/knight.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/board.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/color.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/position.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Run.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Bishop.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Knight.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Pawn.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Rook.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/knight.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/board.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/color.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/position.rs": "true",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package chest-bot --bin chest-bot" />
@@ -161,6 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starter and pieces" />
-    <option name="LAST_COMMIT_MESSAGE" value="starter and pieces" />
+    <MESSAGE value="starter" />
+    <option name="LAST_COMMIT_MESSAGE" value="starter" />
   </component>
 </project>
