@@ -7,11 +7,69 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36120f68-dd19-44f3-91b2-b486371b4f2a" name="Changes" comment="starter and pieces">
+    <list default="true" id="36120f68-dd19-44f3-91b2-b486371b4f2a" name="Changes" comment="added more specific movement">
+      <change afterPath="$PROJECT_DIR$/src/util/pieces.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Bishop.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Knight.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Pawn.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/Rook.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/king.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pieces/queen.rs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/board.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/board.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/color.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/color.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/position.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/position.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/chest-bot-77e5b598b0126735/dep-bin-chest-bot" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/.fingerprint/chest-bot-77e5b598b0126735/dep-bin-chest-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/.fingerprint/chest-bot-77e5b598b0126735/output-bin-chest-bot" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/.fingerprint/chest-bot-77e5b598b0126735/output-bin-chest-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/chest-bot" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/chest-bot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/chest-bot.d" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/chest-bot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.15gumap2pecescm2.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.15gumap2pecescm2.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.16qcslbmp16a2dy.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.16qcslbmp16a2dy.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.1d736jvuoe4qeh2h.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.1d736jvuoe4qeh2h.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.1ff1161fht6r2nrt.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.1ff1161fht6r2nrt.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.361yly4k3zeatqzt.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.361yly4k3zeatqzt.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.3rg9j3f1xol5z198.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.3rg9j3f1xol5z198.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.44mn4dhznwhv1tdj.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.44mn4dhznwhv1tdj.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.4jub0scjkdekx50q.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.4jub0scjkdekx50q.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.4uaxuhrypqrr2jsl.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.4uaxuhrypqrr2jsl.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.51bw25hbhlazjjx9.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.51bw25hbhlazjjx9.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.5azhi0fee0k570z2.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.5azhi0fee0k570z2.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.5fz0gtuwy2si5axz.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.5fz0gtuwy2si5axz.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.l32ilqelx0qr3ln.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.l32ilqelx0qr3ln.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.wrysmyt2nwg1q17.rcgu.o" beforeDir="false" afterPath="$PROJECT_DIR$/target/debug/deps/chest_bot-77e5b598b0126735.wrysmyt2nwg1q17.rcgu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/12exuthdgt051m1a.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/13qzowqopftl3wnr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/13r4jjeu103jg7x.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/15gumap2pecescm2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/16qcslbmp16a2dy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/1algnewmwv5qidt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/1d736jvuoe4qeh2h.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/1ff1161fht6r2nrt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/1nv50q2bo5gkyiea.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/1wjc416k557hv1mt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/28pxbqbxkw5sktg.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/2ls8dxoz7v3fqswr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/2qcrxy8np66vw7km.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/36jpoiba7rytc451.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/3rg9j3f1xol5z198.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/3tl7zfbemj8t1125.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/44mn4dhznwhv1tdj.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/46v76hbnvmr6j6on.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/4jub0scjkdekx50q.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/4uaxuhrypqrr2jsl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/51bw25hbhlazjjx9.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/5azhi0fee0k570z2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/5fz0gtuwy2si5axz.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/dep-graph.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/l32ilqelx0qr3ln.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/q2hh839dh680eyx.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/query-cache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/work-products.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss-18omkc40xa8g3lcvgach76pta/wrysmyt2nwg1q17.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/debug/incremental/chest_bot-3v5yfkngxtx4w/s-gzk38gryjf-rsbnss.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,29 +153,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cargo.Run.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Bishop.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Knight.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Pawn.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Rook.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/knight.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/board.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/color.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/position.rs&quot;: &quot;true&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Build `Run`.executor": "Run",
+    "Cargo.Run.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Bishop.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Knight.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Pawn.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/Rook.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/pieces/knight.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/board.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/color.rs": "true",
+    "org.rust.disableDetachedFileInspection/Users/noamfavier/RustroverProjects/chest-bot/src/util/position.rs": "true",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package chest-bot --bin chest-bot" />
@@ -151,7 +210,8 @@
       <workItem from="1725210183862" duration="8928000" />
       <workItem from="1725273249610" duration="133000" />
       <workItem from="1725273393260" duration="50000" />
-      <workItem from="1725276320208" duration="1390000" />
+      <workItem from="1725276320208" duration="1642000" />
+      <workItem from="1725285690868" duration="6297000" />
     </task>
     <task id="LOCAL-00001" summary="starter and pieces">
       <option name="closed" value="true" />
@@ -169,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725273889591</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added more specific movement">
+      <option name="closed" value="true" />
+      <created>1725277958386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725277958386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +257,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starter" />
     <MESSAGE value="starter and pieces" />
-    <option name="LAST_COMMIT_MESSAGE" value="starter and pieces" />
+    <MESSAGE value="added more specific movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more specific movement" />
   </component>
 </project>
