@@ -1,12 +1,14 @@
 #[derive(Debug)]
 pub(crate) struct Position {
-    position: String,
+    x: char,
+    y: char
 }
 
 impl Position {
-    pub(crate) fn new(position: String) -> Self {
+    pub(crate) fn new(y: char, x:char) -> Self {
         Self {
-            position,
+            x,
+            y
         }
     }
 }

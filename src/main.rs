@@ -1,3 +1,6 @@
+use util::color::Color;
+use util::position::Position;
+
 mod pieces {
     pub mod rook;
     pub mod pawn;
@@ -15,12 +18,12 @@ mod util {
 
 fn main() {
 
-    let rook = pieces::rook::Rook::new(util::color::Color::black(), util::position::Position::new(String::from("A1")));
-    let pawn = pieces::pawn::Pawn::new(util::color::Color::white(), util::position::Position::new(String::from("A2")));
-    let knight = pieces::knight::Knight::new(util::color::Color::black(), util::position::Position::new(String::from("A3")));
-    let bishop = pieces::bishop::Bishop::new(util::color::Color::white(), util::position::Position::new(String::from("A4")));
-    let king = pieces::king::King::new(util::color::Color::black(), util::position::Position::new(String::from("A5")));
-    let queen = pieces::queen::Queen::new(util::color::Color::white(), util::position::Position::new(String::from("A6")));
+    let rook = pieces::rook::Rook::new(Color::black(), Position::new('a', '1'));
+    let pawn = pieces::pawn::Pawn::new(Color::white(), Position::new('a', '2'));
+    let knight = pieces::knight::Knight::new(Color::black(), Position::new('a', '3'));
+    let bishop = pieces::bishop::Bishop::new(Color::white(), Position::new('a', '4'));
+    let king = pieces::king::King::new(Color::black(), Position::new('a', '5'));
+    let queen = pieces::queen::Queen::new(Color::white(), Position::new('a', '6'));
 
     println!("{:?}", rook.color);
     println!("{:?}", rook.position);
