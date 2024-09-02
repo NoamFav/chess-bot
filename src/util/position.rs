@@ -1,11 +1,11 @@
 #[derive(Debug)]
 pub(crate) struct Position {
-    x: char,
-    y: char
+    pub(crate) x: char,
+    pub(crate) y: char
 }
 
 impl Position {
-    pub(crate) fn new(y: char, x:char) -> Self {
+    pub(crate) fn new(x: char, y:char) -> Self {
         Self {
             x,
             y
