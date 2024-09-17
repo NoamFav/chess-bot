@@ -33,3 +33,7 @@ fn main() {
     println!("{:?}", board.transform_algebraic_notation("Nf6"));
     println!("Hello, world!");
 }
+
+fn random() -> i32 {
+    4
+}
