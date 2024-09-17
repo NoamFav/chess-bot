@@ -14,7 +14,7 @@ pub(crate) struct Move{
     pub(crate) piece: char, // K, Q, R, B, N, P
     pub(crate) x: char, // a-h
     pub(crate) y: char, // 1-8
-    pub(crate) is_capture: bool,
+    pub(crate) is_capture: bool,:
     pub(crate) is_check: bool,
     pub(crate) is_checkmate: bool,
     pub(crate) is_white: bool,
@@ -46,6 +46,7 @@ impl Board{
         pieces.push(Box::new(Bishop::new(Color::black(), Position::new('f', '8'))));
         pieces.push(Box::new(Knight::new(Color::black(), Position::new('g', '8'))));
         pieces.push(Box::new(Rook::new(Color::black(), Position::new('h', '8'))));
+        pieces.push(Box::new(Pawn::new(Color::black(), Position::new('a', '7')));
         for i in 0..8 {
             pieces.push(Box::new(Pawn::new(Color::black(), Position::new(('a' as u8 + i) as char, '7'))));
         }
