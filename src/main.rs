@@ -31,7 +31,5 @@ fn main() {
     println!("{:?}", board.transform_algebraic_notation("a6"));
     println!("{:?}", board.transform_algebraic_notation("Ba4+"));
     println!("{:?}", board.transform_algebraic_notation("Nf6"));
-    println!("{:?}", board.transform_algebraic_notation("O-O"));
-    println!("{:?}", board.transform_algebraic_notation("O-O-O"));
     println!("Hello, world!");
 }
