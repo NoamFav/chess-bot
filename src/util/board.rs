@@ -21,6 +21,7 @@ pub(crate) struct Move{
 }
 
 impl Board{
+ 
     pub(crate) fn new() -> Board {
         let mut pieces: Vec<Box<dyn Piece>> = Vec::new();
 
