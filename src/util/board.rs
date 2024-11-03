@@ -9,12 +9,59 @@ pub(crate) struct Board{
     pub(crate) pieces: Vec<Box<dyn Piece>>,
 }
 
+#[cfg(test)]
+mod more_tests {
+    use super::*;
+
+    #[test]
+    fn test_board_render_ascii() {
+        let board = Board::new();
+        let board_str = board.render_ascii();
+        assert!(!board_str.is_empty(), "The board rendering should not be empty");
+    }
+
+    #[test]
+    fn test_transform_algebraic_notation_pawn_move() {
+        let board = Board::new();
+        let move_ = board.transform_algebraic_notation("e4");
+        assert_eq!(move_.piece, 'P', "Expected pawn move");
+        assert_eq!(move_.x, 'e', "Expected move to column e");
+        assert_eq!(move_.y, '4', "Expected move to row 4");
+    }
+
+    #[test]
+    fn test_transform_algebraic_notation_capture() {
+        let board = Board::new();
+        let move_ = board.transform_algebraic_notation("exd5");
+        assert!(move_.is_capture, "Expected a capture move");
+    }
+
+    #[test]
+    fn test_default_board() {
+        let board = Board::default();
+        assert_eq!(board.size, 8, "Default board size should be 8");
+        assert!(board.is_white_turn, "It should be white's turn on a new board");
+    }
+}
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_new_board() {
+        let board = Board::new();
+        assert_eq!(board.size, 8);
+        assert_eq!(board.is_white_turn, true);
+        assert_eq!(board.pieces.len(), 32);
+    }
+}
+
 #[derive(Debug)]
 pub(crate) struct Move{
     pub(crate) piece: char, // K, Q, R, B, N, P
     pub(crate) x: char, // a-h
     pub(crate) y: char, // 1-8
-    pub(crate) is_capture: bool,:
+    pub(crate) is_capture: bool,
     pub(crate) is_check: bool,
     pub(crate) is_checkmate: bool,
     pub(crate) is_white: bool,
@@ -203,5 +250,11 @@ impl Board{
         board_string.push_str("  a b c d e f g h\n"); // Footer with column labels
 
         board_string
+    }
+}
+
+impl Default for Board {
+    fn default() -> Self {
+        Self::new()
     }
 }
