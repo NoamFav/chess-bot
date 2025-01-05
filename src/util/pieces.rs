@@ -1,7 +1,6 @@
-use std::any::Any;
 use crate::util::color::Color;
 use crate::util::position::Position;
-
+use std::any::Any;
 
 pub(crate) trait Piece: Any {
     fn as_any(&self) -> &dyn Any;
@@ -43,9 +42,10 @@ pub(crate) struct Pawn {
     pub(crate) has_moved: bool,
 }
 
-
 impl Piece for Rook {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
@@ -68,7 +68,9 @@ impl Piece for Rook {
     }
 }
 impl Piece for Knight {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
@@ -91,7 +93,9 @@ impl Piece for Knight {
     }
 }
 impl Piece for Bishop {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
@@ -114,7 +118,9 @@ impl Piece for Bishop {
     }
 }
 impl Piece for Queen {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
@@ -137,7 +143,9 @@ impl Piece for Queen {
     }
 }
 impl Piece for King {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
@@ -160,7 +168,9 @@ impl Piece for King {
     }
 }
 impl Piece for Pawn {
-    fn as_any(&self) -> &dyn Any { self }
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 
     fn color(&self) -> &Color {
         &self.color
